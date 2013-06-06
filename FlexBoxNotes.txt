@@ -1,0 +1,54 @@
+I. Flex Box
+	A. Starts out to be a sane layout system, not a hack
+	B. Aligns things along a single line
+		1. Can left, center, or right align, or put space between or space around
+		2. Can vertically align things (top, bottom, baseline or CENTER or STRETCH) 
+			a. Elements can override the container alignment with align-self
+		3. No collapsing margins!!!
+			c. if you set a margin to auto it will take up the space between items that aren't used
+	C. Make containers flex ... or not
+		1. You can assign containers to take up a percent or a proportion, or have a fixed width
+			a. flex
+			b. flex is shorthand for more properties that give you more control
+		2. You can chose the visual order without changing the flow!!!
+			a. order
+	D. The Holy Grail Layout made easy
+	E. Available today at your local modern browser
+		1. Chrome and Safari use -webkit-flex. Opera and Firefox use flex because the spec is so close to uniform
+II. Grid Layout
+	A. Grid Layout gives you full 2D control of your layout
+		1. You can set size of rows or columns based on units or percentages
+		2. You can also make them based on the size of the content (normally horizontal is fixed height)
+		3. Allows proportional flexing
+		4. You can have elements take up an entire row or column or just a single segment
+		5. It gives you the placement control of tables, but only using CSS and without the frustration of
+		bizarre table sizing.
+	B. Allows for overlap from one area to another
+	C. Unfortunately grid spec is changing and not consistent currently across browsers, but they are working
+		on it and no current implementation matches the current spec
+III. Exclusions and Shapes
+	A. Only available experimentally. To play with this, use Experimental Webkit Features in Canary chrome://flags
+	B. Exclusions allow you to wrap content around things that aren't floats
+		1. When combined with grid layout and overlapping elements, you could have column-spanning callouts, e.g.
+		2. Available in IE10 or Canary(?)
+			a. wrap-flow
+	C. Shapes allow you to wrap content around things that aren't rectangles
+		1. Wrap text around circles and drop caps and more
+		2. Available in experimental WebKit or Blink
+		3. Will end up either using a method to define a shape (elipse( x, y, radius) or a URL for a png to 
+			pull the alpha channel from.
+		4. Shape outside or Shape inside can make something wrap inside or around a shape.
+			a. shape-margin allows you to put a marging around the shape
+			b. you can combine shapes and exclusions
+		
+IV. Regions
+	A. Regions allow you to define where you content flows (like flows in InDesign or TLF)
+		1. Use Case: an image you want to be "above the fold" regardless of screen size
+		2. You give a flow a name (or label). It pulls it out of the normal HTML flow and you assign
+			boxes to be a region that handles the flow
+				a. flow-into
+				b. flow-from
+		3. Available in experimental WebKit or Blink or a different experimental version in IE10
+V. Wrap-up
+	A. To play with this, use Experimental Webkit Features in Canary chrome://flags
+	B. Possible to do some responsive design without CSS media queries

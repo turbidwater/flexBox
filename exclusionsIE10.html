@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    html
+    {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .wrapper
+    {
+      width: 500px;
+      border: 1px solid #000;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    p
+    {
+      display: block;
+      padding: 5px;
+      max-width: 200px;
+    }
+
+    #float1
+    {
+      width: 140px;
+      position: absolute;
+      
+      padding: 10px;
+      
+      left: 100px;
+      top: 150px;
+    }
+
+    .flow-both
+    {
+      /**/
+      -ms-wrap-flow: both;
+      -webkit-wrap-flow: both;
+      wrap-flow: both;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Exclusions in IE10 Sample</h1>
+  <div class="wrapper">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    
+      <img src="images/theMeek.png" alt="the Meek" id="float1" class="flow-both">
+    
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>              
+    </div>
+    <a href="http://advent2012.digitpaint.nl/21/">Cooler sample here</a>
+</body>
+</html>
+              

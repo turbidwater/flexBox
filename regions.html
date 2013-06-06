@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Regions Sample</title>
+
+	<style type="text/css">
+		html
+		{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		article
+		{
+			
+		}
+
+		img
+		{
+			width: 100%;
+		}
+
+		article
+		{
+			/*
+			-webkit-flow-into: regionTest;
+			*/
+		}
+
+		.wrapper
+		{
+			min-width: 250px;
+			max-width: 500px;
+			width:50%;
+		}
+
+		.before
+		{
+			display: block;
+			width: 100%;
+			height: 140px;
+			/*
+			-webkit-flow-from: regionTest;
+			*/
+		}
+
+		.after
+		{
+			width: 100%;
+			height: 200px;
+			display: block;
+			/*
+			-webkit-flow-from: regionTest;
+			*/
+		}
+
+		.flexWrapper
+		{
+			width: 100%;
+			height: 200px;
+			display: -webkit-flex;
+		}
+
+		.flexWrapper > *
+		{
+			/*
+			-webkit-flex:1;
+			-webkit-flow-from: regionTest;
+			*/
+		}
+	</style>
+</head>
+<body>
+	<h1>Regions Sample</h1>
+
+	<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam nisi, egestas nec convallis at, faucibus eget est. Mauris rutrum egestas nisl, sit amet fermentum orci vehicula et. Maecenas pellentesque faucibus cursus. Nunc varius orci a leo dapibus laoreet. Nam urna magna, vestibulum in egestas at, consequat vel odio. Pellentesque volutpat rhoncus nulla vel interdum. Vestibulum id pulvinar justo.</p>
+		
+		<p>Aliquam quis lectus a nibh bibendum malesuada. Nullam neque est, accumsan quis facilisis eu, tristique vitae ipsum. Ut laoreet mi eu mi lobortis eu interdum sapien sollicitudin. Praesent consequat, dolor eu pellentesque interdum, eros augue tincidunt risus, et tincidunt augue felis et massa. Duis hendrerit bibendum nulla, ac condimentum lectus semper eget. Proin pellentesque venenatis convallis. Phasellus sed ligula eget quam molestie placerat. Proin et ipsum ut lectus volutpat pellentesque. Aenean id libero vel leo tincidunt gravida ut non quam. Etiam ullamcorper auctor est, quis cursus tellus accumsan vitae. Quisque laoreet neque eget felis malesuada ac vestibulum justo faucibus. Duis tincidunt, lectus ac pharetra vestibulum, massa turpis sodales ipsum, at rhoncus enim risus quis nulla. Suspendisse sagittis nunc id arcu pulvinar vestibulum. Etiam quis ipsum lectus.</p>
+	</article>
+
+	<div class="wrapper">
+		<div class="before"></div>
+		<img src="images/banner.png" />
+		<div class="after"></div>
+		<div class="flexWrapper">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
