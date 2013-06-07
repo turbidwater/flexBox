@@ -15,6 +15,7 @@ I. Flex Box
 	D. The Holy Grail Layout made easy
 	E. Available today at your local modern browser
 		1. Chrome and Safari use -webkit-flex. Opera and Firefox use flex because the spec is so close to uniform
+		2. Firefox currently requires you to turn on layout.css.flexbox.enabled
 II. Grid Layout
 	A. Grid Layout gives you full 2D control of your layout
 		1. You can set size of rows or columns based on units or percentages
@@ -30,7 +31,7 @@ III. Exclusions and Shapes
 	A. Only available experimentally. To play with this, use Experimental Webkit Features in Canary chrome://flags
 	B. Exclusions allow you to wrap content around things that aren't floats
 		1. When combined with grid layout and overlapping elements, you could have column-spanning callouts, e.g.
-		2. Available in IE10 or Canary(?)
+		2. Available in IE10
 			a. wrap-flow
 	C. Shapes allow you to wrap content around things that aren't rectangles
 		1. Wrap text around circles and drop caps and more
